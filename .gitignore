@@ -36,3 +36,4 @@ wp-content/plugins/hello.php
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+src/**/*.css

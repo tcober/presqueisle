@@ -24,7 +24,8 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="container">
+        <h1 className="site-title">Living in Presque Isle Wisconsin</h1>
         <FrontThumb data={this.state.posts} />
       </div>
     );
