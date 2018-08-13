@@ -4,13 +4,13 @@ body {
 
 .container {
     position: relative;
-    padding: 20px;
+    padding: 30px;
 
     .site-title {
         font-size: 55px;
         position: absolute;
-        top: 40px;
-        left: 40px;
+        top: 50px;
+        left: 70px;
         z-index: 100;
         color: #fff;
         font-weight: 600;
@@ -19,7 +19,7 @@ body {
 
     .cover-image {
         position: relative;
-        width: calc(50% - 10px);
+        width: calc(50% - 15px);
         display: inline-block;
         overflow: hidden;
         height: 400px;
@@ -50,7 +50,7 @@ body {
 
         &:first-child {
             width: 100%;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
             height: 140vh;
             max-height: 900px;
 
@@ -63,7 +63,7 @@ body {
         }
 
         &:nth-child(2n+3) {
-            margin-left: 20px;
+            margin-left: 30px;
         }
 
         img {
