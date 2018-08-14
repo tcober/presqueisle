@@ -1,7 +1,5 @@
-body {
-  font-family: "jubilat"; }
-
 .container {
+  font-family: "jubilat";
   position: relative;
   padding: 30px; }
   .container .site-title {

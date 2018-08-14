@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import FrontThumb from './Components/FrontThumbs/frontthumb.component'
-import './App.css';
+import './app.css';
+import { BrowserRouter, Route }from 'react-router-dom';
 
 class App extends Component {
 
@@ -24,10 +25,11 @@ class App extends Component {
 
   render() {
     return (
-      <div className="container">
-        <h1 className="site-title">Living in Presque Isle Wisconsin</h1>
-        <FrontThumb data={this.state.posts} />
-      </div>
+      <BrowserRouter>
+        <div className="container">
+          <Route exact path="/" render={ () => <FrontThumb data={this.state.posts} /> } />
+        </div>
+      </BrowserRouter>
     );
   }
 }
