@@ -1,5 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Route }from 'react-router-dom';
+import  Post from '../Posts/post.component'
+
 
 const FrontThumb = props => {
 
@@ -11,10 +14,11 @@ const FrontThumb = props => {
 
         return <div className="cover-image" key={post.id}>
           <div className="title-holder">
-              <h3 className="post-title">{post.title.rendered}</h3>
+              <Link to={post.link.replace("http://localhost:8888/", "")}><h3 className="post-title">{post.title.rendered}</h3></Link>
               <p className="date">{formattedDate}</p>
           </div>
           <img alt={post.title} className="poster" src={post.acf.featured_picture} />
+          <Route exact path={post.link.replace("http://localhost:8888/", "")} render={ () => <Post data={post.content} /> } />
         </div>
       });
 

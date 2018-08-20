@@ -30,6 +30,11 @@
             text-align: center;
             color: #fff;
 
+            a {
+                text-decoration: none;
+                color: #fff;
+            }
+
             .post-title {
                 font-size: 50px;
                 font-weight: 400;
@@ -68,5 +73,80 @@
         img {
             width: 100%;
         }
+    }
+}
+
+.post {
+    .wp-block-cover-image {
+        width: 100%;
+        height: 85vh;
+        position: relative;
+        .wp-block-cover-image-text {
+            font-size: 50px;
+            color: #fff;
+            text-align: center;
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            text-transform: uppercase;
+            line-height: 50px;
+        }
+    }
+
+    p, cite, h2, ul, li, .wp-block-separator {
+        max-width: 650px;
+        margin: 30px auto;
+    }
+
+    li {
+        margin: 18px auto;
+    }
+
+    p {
+        font-size: 17px;
+        line-height: 24px;
+        color: rgb(94, 94, 94);
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    .blocks-gallery-item {
+        list-style-type: none;
+    }
+
+    .has-parallax {
+        background-attachment: fixed;
+    }
+
+    cite {
+        display: block;
+        text-align: right;
+        color: #000;
+        &:before {
+            content: '– '
+        }
+    }
+
+    figure {
+        iframe {
+            margin: 0 auto;
+            display: block;
+            max-width: 600px;
+            width: 100%;
+            height: 335px;
+        }
+    }
+
+    .columns-two {
+
+    }
+
+    figcaption {
+        font-size: 12px;
+        color: rgb(121, 121, 121);
     }
 }
