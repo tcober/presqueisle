@@ -17,7 +17,7 @@ class App extends Component {
 // Display that post
 
   componentDidMount() {
-    fetch("http://localhost:8888/wp-json/wp/v2/posts")
+    fetch("http://presqueisle.boxboxboxbox.com/wp-json/wp/v2/posts")
       .then( response => response.json() )
       .then( responseData => {
         this.setState({ 

@@ -1,6 +1,5 @@
 import React from 'react';
 import _ from 'lodash';
-import Parser from 'html-react-parser';
 import { Link } from 'react-router-dom'
 
 
@@ -19,7 +18,7 @@ const Post = props => {
     }
 
     return (
-        <div class="post-container">
+        <div className="post-container">
             <Link to="/"><h1 className="site-title">Living in Presque Isle Wisconsin</h1></Link>
             <div onLoad={renderHTML()} className="post">
             </div>

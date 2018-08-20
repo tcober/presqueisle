@@ -70,7 +70,7 @@
     text-transform: uppercase;
     line-height: 50px; }
 
-.post p, .post cite, .post h2, .post ul, .post li, .post .wp-block-separator {
+.post p, .post blockquote, .post cite, .post h2, .post ul, .post li, .post .wp-block-separator {
   max-width: 650px;
   margin: 30px auto; }
 
@@ -85,15 +85,34 @@
 .post img {
   max-width: 100%; }
 
-.post .blocks-gallery-item {
-  list-style-type: none; }
+.post .wp-block-gallery {
+  padding: 0px; }
+  .post .wp-block-gallery.columns-2 .blocks-gallery-item {
+    width: calc(50% - 10px);
+    height: 185px;
+    overflow: hidden;
+    display: inline-block; }
+    .post .wp-block-gallery.columns-2 .blocks-gallery-item figure {
+      margin: 0px; }
+  .post .wp-block-gallery.columns-2 .blocks-gallery-item:nth-child(3n + 1) {
+    width: 100%;
+    margin: 0px;
+    height: auto; }
+  .post .wp-block-gallery.columns-2 .blocks-gallery-item:nth-child(3n + 3) {
+    margin-left: 20px; }
+  .post .wp-block-gallery .blocks-gallery-item {
+    list-style-type: none; }
 
 .post .has-parallax {
   background-attachment: fixed; }
 
+.post .wp-block-quote {
+  padding-left: 20px;
+  border-left: 5px solid black; }
+
 .post cite {
   display: block;
-  text-align: right;
+  text-align: left;
   color: #000; }
   .post cite:before {
     content: '– '; }
@@ -108,3 +127,22 @@
 .post figcaption {
   font-size: 12px;
   color: #797979; }
+
+.post .wp-block-button {
+  width: 100%;
+  display: table; }
+  .post .wp-block-button.aligncenter {
+    text-align: center; }
+  .post .wp-block-button a {
+    padding: 20px;
+    background-color: #494949;
+    color: #fff;
+    border-radius: 20px;
+    text-decoration: none; }
+    .post .wp-block-button a:hover {
+      background-color: #797979; }
+
+.post .wp-block-video {
+  text-align: center; }
+  .post .wp-block-video video {
+    max-height: 700px; }
