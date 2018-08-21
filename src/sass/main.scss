@@ -1,0 +1,87 @@
+.container {
+  font-family: "jubilat";
+  position: relative;
+
+  .front {
+    margin: 30px;
+  }
+
+  .site-title {
+    font-size: $gigantic;
+    position: absolute;
+    top: 50px;
+    left: 70px;
+    z-index: 100;
+    color: $white;
+    font-weight: $bold;
+    margin: 0px;
+
+    @include smallScreen {
+      font-size: $huge;
+      top: 20px;
+      left: 30px;
+    }
+  }
+
+  .cover-image {
+    position: relative;
+    width: calc(50% - 15px);
+    display: inline-block;
+    overflow: hidden;
+    height: 400px;
+    margin-bottom: 30px;
+
+    .title-holder {
+      position: absolute;
+      bottom: 30px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      text-align: center;
+      color: $white;
+
+      a {
+        text-decoration: none;
+        color: $white;
+      }
+
+      .post-title {
+        font-size: $huge;
+        font-weight: $regular;
+        text-transform: uppercase;
+        line-height: 42px;
+        margin: 0px auto;
+        max-width: 90%;
+        text-shadow: 1px 1px 2px rgba(119, 119, 119, 0.5);
+      }
+
+      .date {
+        font-weight: $extraLight;
+        margin: 10px 0px 0px;
+        text-shadow: 1px 1px 2px rgba(119, 119, 119, 0.5);
+      }
+    }
+
+    &:first-child {
+      width: 100%;
+      margin-bottom: 30px;
+      height: 140vh;
+      max-height: 900px;
+
+      .title-holder {
+        .post-title {
+          font-size: 70px;
+          line-height: 70px;
+        }
+      }
+    }
+
+    &:nth-child(2n + 3) {
+      margin-left: 30px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}

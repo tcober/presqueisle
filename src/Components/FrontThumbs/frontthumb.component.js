@@ -16,7 +16,7 @@ const FrontThumb = props => {
       : "http://presqueisle.boxboxboxbox.com/wp-content/uploads/2018/08/zubHkbvTRmNIa11hjkp4Q-e1534789579203.jpg";
 
     return (
-      <div className="cover-image" key={post.id}>
+      <div className="cover-image" style={{backgroundImage: `url(${image})`}} key={post.id}>
         <div className="title-holder">
           <Link
             to={post.link.replace("http://presqueisle.boxboxboxbox.com", "")}
@@ -25,7 +25,6 @@ const FrontThumb = props => {
           </Link>
           <p className="date">{formattedDate}</p>
         </div>
-        <img alt={post.title} className="poster" src={image} />
       </div>
     );
   });
