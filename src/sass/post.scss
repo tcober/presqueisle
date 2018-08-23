@@ -22,7 +22,7 @@
     margin: 20px auto;
     font-size: $medium;
     font-weight: $light;
-    line-height: 26px;
+    line-height: 29px;
     color: $grey;
     @include mobile {
       font-size: $mediumSmall;
@@ -63,7 +63,7 @@
       @include smallScreen {
         font-size: $big;
         line-height: 30px;
-        bottom: 40px;
+        bottom: 60px;
       }
     }
   }
@@ -187,11 +187,12 @@
 
   .wp-block-button {
     width: 100%;
-    display: table;
+    display: inline-block;
     &.aligncenter {
       text-align: center;
     }
     a {
+      display: inline-block;
       padding: 20px;
       background-color: $darkGreen;
       color: $white;

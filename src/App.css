@@ -133,6 +133,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+* {
+  letter-spacing: 0.5px; }
+
 .container {
   font-family: "jubilat";
   position: relative; }
@@ -143,8 +146,8 @@ table {
         margin: 0px; } }
     @media (max-width: 800px) {
       .container .front > a > .site-title {
-        top: 10px;
-        left: 40px; } }
+        top: 20px;
+        left: 20px; } }
   .container .site-title {
     font-size: 55px;
     position: absolute;
@@ -241,9 +244,9 @@ table {
 
 .post p {
   margin: 20px auto;
-  font-size: 19px;
+  font-size: 20px;
   font-weight: 200;
-  line-height: 26px;
+  line-height: 29px;
   color: #414141; }
   @media (max-width: 450px) {
     .post p {
@@ -280,7 +283,7 @@ table {
       .post .wp-block-cover-image .wp-block-cover-image-text {
         font-size: 24px;
         line-height: 30px;
-        bottom: 40px; } }
+        bottom: 60px; } }
 
 .post .wp-block-image {
   text-align: center;
@@ -369,10 +372,11 @@ table {
 
 .post .wp-block-button {
   width: 100%;
-  display: table; }
+  display: inline-block; }
   .post .wp-block-button.aligncenter {
     text-align: center; }
   .post .wp-block-button a {
+    display: inline-block;
     padding: 20px;
     background-color: #122c07;
     color: #fff;
